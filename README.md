@@ -7,6 +7,6 @@ Requirements:
 2. buat table pada phpmyadmin dengan nama "analisis-sentimen".
 3. file .sql ada pada direktory "/database/"
 
-Link Akses: http://localhost/analisis-sentimen/public
-Username: titan
+Link Akses: http://localhost/analisis-sentimen/public <br>
+Username: titan <br>
 Password: titan
