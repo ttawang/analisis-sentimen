@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # analisis-sentimen
 =======
+=======
+>>>>>>> 46359d2b54c01da67ed1fefcc770d5c0784abdee
 # CodeIgniter 4 Framework
 
 ## What is CodeIgniter?
@@ -57,4 +60,7 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 - [mbstring](http://php.net/manual/en/mbstring.installation.php)
 - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
 - xml (enabled by default - don't turn it off)
+<<<<<<< HEAD
 >>>>>>> 8017dad (first commit)
+=======
+>>>>>>> 46359d2b54c01da67ed1fefcc770d5c0784abdee
