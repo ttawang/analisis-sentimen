@@ -320,9 +320,6 @@ class Prepcontrol extends BaseController
 			}
 		}
 		return $mknn;
-		/* 
-		
-		*/
 	}
 
 	public function knn($k){
