@@ -130,11 +130,7 @@ class View extends BaseController
 		$data['positif'] = $this->prepare()['positif'];
 
 		$data['tittle'] = 'Data Preprocessing';
-
-		#$data['tweet'] = $tweet->findAll();
-
-		#test
-
+		
 		$n=0;
 		foreach($tweet->orderBy('id','desc')->findAll() as $i){
 			$kalimat[$n] = $i['kalimat'];
