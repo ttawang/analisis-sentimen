@@ -134,11 +134,12 @@ class View extends BaseController
 		$n=0;
 		foreach($tweet->orderBy('id','desc')->findAll() as $i){
 			$kalimat[$n] = $i['kalimat'];
-			$casefolding[$n] = $prep->casefolding($kalimat[$n]);
-			$nourl[$n] = $prep->nourl($casefolding[$n]);
+			#$casefolding[$n] = $prep->casefolding($kalimat[$n]);
+			$nourl[$n] = $prep->nourl($kalimat[$n]);
 			$nousername[$n] = $prep->nousername($nourl[$n]);
-			$tokenizing[$n] = $prep->tokenizing($nousername[$n]);
-			$stopword[$n] = $prep->stopword($nousername[$n]);
+			$casefolding[$n] = $prep->casefolding($nousername[$n]);
+			$tokenizing[$n] = $prep->tokenizing($casefolding[$n]);
+			$stopword[$n] = $prep->stopword($casefolding[$n]);
 			$stemming[$n] = $prep->stemming($stopword[$n]);
 			$n++;
 		}

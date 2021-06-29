@@ -29,6 +29,9 @@ class Prepcontrol extends BaseController
 
 	public function casefolding($data){
 		$data = strtolower($data);
+		$regex3 = "/[^a-zA-Z0-9_]/";
+		$data = preg_replace($regex3, ' ',$data);
+
 		return $data;
 		/* 
 		mengubah semua karakter menjadi huruf kecil menggunakan fungsi php strlower
@@ -48,8 +51,8 @@ class Prepcontrol extends BaseController
 			foreach($words as $k=>$value){
 
 				#menghapus karakter tidak penting
-				$regex3 = "/[^a-zA-Z0-9_]/";
-				$words[$k] = preg_replace($regex3, '',$words[$k]);
+				#$regex3 = "/[^a-zA-Z0-9_]/";
+				#$words[$k] = preg_replace($regex3, '',$words[$k]);
 				$words[$k] = preg_replace('/\d+/u', '', $words[$k]);
 				/* 
 				menghapus karakter tidak penting seperti angka dan tanda baca

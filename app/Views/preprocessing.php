@@ -14,9 +14,9 @@
                 <tr>
                     <th>No</th>
                     <th>Tweet</th>
-                    <th>Case Folding</th>
                     <th>Remove Url</th>
                     <th>Remove Username</th>
+                    <th>Case Folding</th>
                     <th>Tokenizing</th>
                     <th>Stopword</th>
                     <th>Stemming</th>
@@ -30,9 +30,9 @@
                     <tr>
                         <td><?= $n ?></td>
                         <td><?= $tweet['kalimat'][$a] ?></td>
-                        <td><?= $tweet['case folding'][$a] ?></td>
                         <td><?= $tweet['nourl'][$a] ?> </td>
                         <td><?= $tweet['nousername'][$a] ?> </td>
+                        <td><?= $tweet['case folding'][$a] ?></td>
                         <td><?= $tweet['tokenizing'][$a] ?> </td>
                         <td><?= $tweet['stopword'][$a] ?></td>
                         <td><?= $tweet['stemming'][$a] ?></td>
