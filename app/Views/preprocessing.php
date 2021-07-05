@@ -51,12 +51,12 @@
 </div>
 
 
-<a href=<?= base_url('/home') ?>>
+<!--a href=<--?= base_url('/home') ?>>
     <button type="button" class="btn btn-dark btn-lg col-3">Home</a></button>
 </a>
-<?php foreach($k as $b):?>
-<a href=<?= base_url('k/'.$b['id']) ?>> 
+<--?php foreach($k as $b):?>
+<a href=<--?= base_url('k/'.$b['id']) ?>> 
     <button type="button" class="btn btn-danger btn-lg col-3">Calculate</button>
 </a>
-<?php endforeach ?>
+<--?php endforeach ?>
 <?= $this->endSection() ?>
